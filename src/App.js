@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <main>
-      <div className="mt-3">
+      <div className="mt-4">
         <h5 class="text-center animate-character fw-bolder styling">
           <span><img src={bw} className="img-fluid" width={'75px'} alt="blueweather" /></span>
           BLUE WEATHER

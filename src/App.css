@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: center no-repeat;
+}
+  
+.card {
+  background: rgba(0, 0, 0, 0.336);
+  color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.cardbody {
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url('../src/images/pexels-photo.jpg');
+    font-size: 120%;
+    min-height: 400px;
+  }
+
+  .cardname{
+    background-color: rgba(150, 144, 144, 0.274);
+  }
+
+
+  .width{
+    width: 70px;
+    text-align: center;
+  }
+
+
+  .animate-character
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #04c3fd 0%,
+    #057baa 29%,
+    #02304b 67%,
+    #012429 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+
+}
+
+.styling{
+  font-size: 50px; 
+  font-family:'Courier New', Courier, monospace
+}
+
+.styling1{
+  font-family:'Courier New', Courier, monospace;
+  text-shadow: 1px 1px 2px black;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 8px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #ffff;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .search-bar {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-family: inherit
+  }
+
+  .search-bar:focus {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+    font-family: inherit
+  }
+  .weather-details{
+      font-weight: bold;
+      font-style: oblique; 
+  }
+  button:hover {
+    background: #0bc3f16b;
+    color: white;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .weather-description {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .weather-description img{
+      margin-right: 5px;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    /* margin-left: 8px; */
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  /* Light & Dark */
+html {
+  transition: all 0.5s ease-in;
+}
+
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: rgb(8, 8, 8);
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
+}
+
+
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid lightblue;
+  border-radius: 4px;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+input{
+  background-color: none;
+  outline-color: none;
+}
+input::after{
+  background-color: transparent;
+}
+
+.bg-card{
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
